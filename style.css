@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-nav{
+nav {
     background-color: rgb(37, 9, 37);
     color: white;
     height: 65px;
@@ -15,17 +16,17 @@ nav{
     font-family: 'Roboto', sans-serif;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
 }
 
-.gameContainer{ 
+.gameContainer {
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-rows: repeat(3, 10vw);
     grid-template-columns: repeat(3, 10vw);
@@ -33,7 +34,7 @@ nav ul{
     position: relative;
 }
 
-.box{
+.box {
     border: 2px solid black;
     font-size: 8vw;
     cursor: pointer;
@@ -42,7 +43,7 @@ nav ul{
     align-items: center;
 }
 
-.box:hover{
+.box:hover {
     background-color: rgb(242, 234, 250);
 }
 
@@ -50,33 +51,33 @@ nav ul{
     font-size: 22px;
 }
 
-.gameInfo{
+.gameInfo {
     padding: 0 34px;
     font-family: 'Baloo Bhaina 2', cursive;
 }
 
-.gameInfo h1{
+.gameInfo h1 {
     font-size: 2.5rem;
 }
 
-.imgbox img{
+.imgbox img {
     width: 0;
     transition: width 1s ease-in-out;
 }
 
-.br-0{
+.br-0 {
     border-right: 0;
 }
 
-.bl-0{
+.bl-0 {
     border-left: 0;
 }
 
-.bt-0{
+.bt-0 {
     border-top: 0;
 }
 
-.bb-0{
+.bb-0 {
     border-bottom: 0;
 }
 
@@ -91,7 +92,7 @@ nav ul{
     font-weight: bolder;
 }
 
-.line{
+.line {
     background-color: black;
     height: 3px;
     width: 0;
@@ -100,18 +101,20 @@ nav ul{
     transition: width 1s ease-in-out;
 }
 
-@media screen and (max-width: 950px)
-{
-    .gameContainer{
+@media screen and (max-width: 950px) {
+    .gameContainer {
         flex-wrap: wrap;
     }
-    .gameInfo{
+
+    .gameInfo {
         margin-top: 34px;
     }
-    .gameInfo h1{
+
+    .gameInfo h1 {
         font-size: 1.5rem;
     }
-    .container { 
+
+    .container {
         grid-template-rows: repeat(3, 20vw);
         grid-template-columns: repeat(3, 20vw);
     }
